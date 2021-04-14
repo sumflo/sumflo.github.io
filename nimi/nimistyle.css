@@ -1,0 +1,310 @@
+.header{
+  width: 800px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #565756;
+  border-radius: 0 60px 0 60px ;
+}
+
+.holder{
+  margin: 0 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  display: box;
+}
+
+.intro{
+  color: #C8F39A;
+}
+
+.exp{
+  color: #C8F39A;
+}
+
+.achi{
+  color: #C8F39A;
+}
+
+.free{
+  color: #C8F39A;
+}
+
+.container{
+  width: 800px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+}
+
+.left{
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.stripe{
+  background-color: #9CA3A3;
+  width: 20px;
+  height: 1450px;
+  margin: 20px;
+}
+
+.right{
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.baby{
+  width:300px;
+  height: auto;
+  margin: 25px 5px;
+  border-radius: 0 60px 0 60px ;
+  border: solid;
+  border-color: #565756;
+}
+
+.name{
+  text-align: center;
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Permanent Marker', cursive;
+  color: #565756;
+  border-bottom: solid;
+  width:270px;
+  margin: 0;
+}
+
+.status{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #565756;
+  width:300px;
+  margin: 0;
+}
+
+.superpower{
+  margin-top: 50px;
+  border-radius: 0 60px 0 60px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-wrap: wrap;
+  background-color: #C8F39A; /*#FDFDDE*/
+}
+
+.power{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 20px;
+  color: #565756;
+  margin-top: 50px;
+}
+
+.button{
+  background-color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
+  border-radius: 100px;
+  padding: 0px 15px;
+  height: 50px;
+  margin: 15px 0px; 
+}
+
+.button:hover{
+ width: auto; 
+}
+
+.strong{
+  display: box;
+  margin: 0px 10px 0px 10px;
+  height: 30px;
+}
+
+.superman{
+  display: box;
+  height: 30px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.fast{
+  display: box;
+  margin: 0px 10px 0px 10px;
+  height: 30px;
+}
+
+.flash{
+  display: box;
+  height: 30px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.hawk{
+  display: box;
+  margin: 0px 10px 0px 10px;
+  height: 30px;
+}
+
+.eye{
+  display: box;
+  height: 30px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.handsome{
+  display: box;
+  margin: 0px 10px 0px 10px;
+  height: 30px;
+}
+
+.thor{
+  display: box;
+  height: 30px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.smart{
+  display: box;
+  margin: 0px 10px 0px 10px;
+  height: 30px;
+}
+
+.dad{
+  display: box;
+  height: 30px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.persistent{
+  display: box;
+  margin: 0px 10px 0px 10px;
+  height: 30px;
+}
+
+.mom{
+  display: box;
+  height: 30px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.first{
+  width: 70px;
+}
+
+.first:hover{
+  width: 250px;
+}
+
+.second{
+  width: 50px;
+}
+
+.second:hover{
+  width: 250px;
+}
+
+.third{
+  width: 100px;
+}
+
+.third:hover{
+  width: 250px;
+}
+
+.fourth{
+  width: 100px;
+}
+
+.fourth:hover{
+  width: 250px;
+}
+
+.fiveth{
+  width: 60px;
+}
+
+.fiveth:hover{
+  width: 250px;
+}
+
+.sixth{
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.sixth:hover{
+  width: 250px;
+}
+
+.introduction{
+  margin: 15px;
+}
+
+.box{
+  margin: margin: 15px;
+}
+
+.text{
+  font-family: 'Indie Flower', cursive;
+}
+
+.sentence{
+  font-family: 'Nunito', sans-serif;
+  color: #565756;
+  }
+
+.title{
+  font-family: 'Permanent Marker', cursive;
+  font-weight: ;
+  font-size: 20px;
+  color: #565756;
+}
+
+.contact{
+  background-color: #3cb878;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #565756;
+  border-radius:50%;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  font-size: 6px;
+}
+
+.fix{
+  margin: 0px;
+}
+
+.contact:hover{
+  background-color: white;
+  color: #565756;
+}
