@@ -7,10 +7,13 @@
 
 .box{
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 1000px;
     margin: auto;
+}
+
+.headre{
+    align-items: center;
 }
 
 .title{
@@ -19,9 +22,9 @@
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 50px;
+    font-size: 55px;
     flex-grow: 1;
-    height: 100px;
+    height: 120px;
     background-image: url('numbers.jpg');
     border-radius: 5px;
     margin:0;
@@ -38,9 +41,18 @@
 .worklink{
     font-family: 'Montserrat', sans-serif;
     margin-top:30px;
+    background-image: url('confetti.jpg');
+    height: 1500px;
+    border-radius: 5px;
 }
 
 a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+li{
+    margin:10px;
 }
