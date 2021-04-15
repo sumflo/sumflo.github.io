@@ -313,3 +313,37 @@ li {
   background-color: #525354;
   right: 50px;
 }
+
+.backbutton{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #525354;
+  border-radius:50%;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 6px;
+}
+
+#back{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.backbutton:hover{
+  background-color: white;
+  color: #525354;
+}
+
+#back:hover{
+  color: #565756;
+}

@@ -1,12 +1,46 @@
+.headercontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 1000px;
     margin: auto;
 }
 
 .title{
+    display: flex;
     font-family: 'Gloria Hallelujah', cursive;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    flex-grow: 1;
+    height: 100px;
+    background-image: url('numbers.jpg');
+    border-radius: 5px;
+    margin:0;
+}
+
+.headerstripe{
+    height: 5px;
+    margin: 0 20px;
+    border-radius: 5px;
+    background-color: #8CC3C8;
+    flex-grow: 3;
 }
 
 .worklink{
     font-family: 'Montserrat', sans-serif;
+    margin-top:30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
 }
