@@ -9,6 +9,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-top: 50px;
+flex-direction: column;
 
 }
 
@@ -43,7 +44,7 @@ margin-top: 50px;
     font-family: 'Nunito', sans-serif;
     color: white;
     position: absolute;
-    margin-top: 0px;
+    bottom: 0px;
     background-color: black;
     opacity: 0.6;
     justify-content: flex-end;
@@ -78,5 +79,17 @@ margin-top: 50px;
 }
 
 .thumbNail{
-    background-color: aquamarine;
+    display: flex;
+    width: 55px;
+    height: 55px;
+    margin: 50px 10px 0 10px;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 20px;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+.thumbNail:hover{
+    box-shadow: 5px 5px 15px white; 
 }
