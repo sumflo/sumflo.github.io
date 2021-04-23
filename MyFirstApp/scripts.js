@@ -80,14 +80,32 @@ $('#description').text(photos[photoNumber].description);
     loadPhoto(currentPhoto);
   })
 
-/* $('#nail').attr('src',photos[0].photo);
+function thumbNailer(index){
+  $('.nail').append('<img class="thumbNail"></img>');
+    $('.nail img:last-of-type').attr('src', index.photo);
+} 
 
-function thumbNailer(photoNumber){
-$('.nail').append(<img class="thumbNail" data-number="0"></img>);
-$('#thumb img:last-of-type').attr('src', photoNumber);
-} */
+photos.forEach(thumbNailer);
 
-/* photos.forEach(function(index) {
-$('.nail').append('<img class="thumbNail" data-number="0"></img>');
-$('#thumb img:last-of-type').attr('src', photos[index].photo);
-}) */
+
+
+/*  photos.forEach(function(index) {
+  $('.nail').append('<img class="thumbNail" data-number="0"></img>');
+    $('.nail img:last-of-type').attr('src', index.photo);
+}); 
+*/
+
+/*
+function thumbNailer(serial){
+  $('.nail').append('<img class="thumbNail" data-index="${index}" > ${item} (data-index="${index}")></img>');
+    $('.nail img:last-of-type').attr('src', serial.photo);
+    $('.thumbNail').click((event) => {
+      let thumbClicked = $(event.target).attr('data-index');
+      let indexNumber = parseInt(thumbClicked);
+} 
+
+photos.forEach(thumbNailer); */
+
+ $('.thumbNail').attr('data-index',0); 
+
+
