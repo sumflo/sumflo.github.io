@@ -67,7 +67,7 @@ $('#description').text(photos[photoNumber].description);
 loadPhoto(currentPhoto);
 
 $('#right').click(() => {
-  if(currentPhoto < 10){
+  if(currentPhoto < 10){ /* if(currentPhoto < photos.lenght) */
     currentPhoto++;
   }else{
     currentPhoto=0;
@@ -75,15 +75,11 @@ $('#right').click(() => {
   loadPhoto(currentPhoto);
 })
 
-/* if(currentPhoto == 10){
-  $('#right').click(loadPhoto(currentPhoto),0);
-} */
-
 $('#left').click(() => {
   if(currentPhoto > 0){
     currentPhoto--;
   }else{
-    currentPhoto=10;
+    currentPhoto=10; /* currentPhoto=photos.lenght; */
   }
   loadPhoto(currentPhoto);
 })
@@ -105,6 +101,12 @@ $('.thumbNail').click(function(event){
 
 let dataNumber = $('.thumbNail').attr('data-number');
 let numberIndex = parseInt(dataNumber);
+
+/*
+  if(currentPhoto==$('.thumbNail').attr('data-number'){
+    $('.thumbNail').css('box-shadow', '5px 5px 15px white');
+  }
+*/
 
 /*
   if(currentPhoto==numberIndex){

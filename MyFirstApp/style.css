@@ -125,3 +125,37 @@ flex-direction: column;
 .thumbTitleHolder:hover .thumbTitle{
     visibility: visible;
 }
+
+.backbutton{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #565756;
+  border-radius:50%;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  font-size: 6px;
+}
+
+#back{
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .backbutton:hover{
+    background-color: white;
+    color: #565756;
+  }
+  
+  #back:hover{
+    color: #565756;
+  }
