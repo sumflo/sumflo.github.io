@@ -80,16 +80,48 @@ flex-direction: column;
 
 .thumbNail{
     display: flex;
-    width: 55px;
-    height: 55px;
-    margin: 50px 10px 0 10px;
+    width: 60px;
+    height: 60px;
+    margin: 0px 10px 0 10px;
     box-shadow: 5px 5px 15px gray;
     border-radius: 20px;
     border: solid;
     border-width: 3px;
     border-color: white;
+    position: relative;
 }
 
 .thumbNail:hover{
     box-shadow: 5px 5px 15px white; 
+}
+
+.thumbTitleHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.thumbTitle{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 12px;
+    background-color: black;
+    opacity: 0.6;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding:3px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+ visibility: hidden; 
+}
+
+.thumbTitleHolder:hover .thumbTitle{
+    visibility: visible;
 }
