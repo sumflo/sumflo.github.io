@@ -119,7 +119,7 @@ flex-direction: column;
     width: 60px;
     height: 60px;
     border-radius: 20px;
- visibility: hidden; 
+    visibility: hidden; 
 }
 
 .thumbTitleHolder:hover .thumbTitle{

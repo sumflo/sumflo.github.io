@@ -59,9 +59,21 @@ let photos = [
 let currentPhoto = 0;
 
 let loadPhoto = (photoNumber) => {
-$('#photo').attr('src', photos[photoNumber].source);
-$('#photoTitle').text(photos[photoNumber].title);
-$('#description').text(photos[photoNumber].description);
+  $('#photo').attr('src', photos[photoNumber].source);
+  $('#photoTitle').text(photos[photoNumber].title);
+  $('#description').text(photos[photoNumber].description);
+
+  let dataNumber = $('.thumbNail').attr('data-number');
+  let numberIndex = parseInt(dataNumber);
+
+  if(photoNumber==numberIndex){
+    $('.thumbNail').css('box-shadow', '5px 5px 15px white');
+    /* let previous = photoNumber;
+    if(previous==$('.thumbNail:data-number')){
+    $('.thumbNail').css('box-shadow', '5px 5px 15px gray');
+    } */
+  }
+
 }
 
 loadPhoto(currentPhoto);
@@ -109,13 +121,13 @@ let numberIndex = parseInt(dataNumber);
 */
 
 /*
-  if(currentPhoto==numberIndex){
+  if(numberIndex==currentPhoto){
     $('.thumbNail').css('box-shadow', '5px 5px 15px white');
   }
 */
 
 /*
   if(currentPhoto==numberIndex){
-    $('.thumbNail:data-number').css('box-shadow', '5px 5px 15px white');
+    $('.thumbNail:data-number="numberIndex"').css('box-shadow', '5px 5px 15px white');
   }
 */
