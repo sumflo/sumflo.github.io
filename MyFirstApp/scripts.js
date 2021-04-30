@@ -1,4 +1,4 @@
-let photos = [
+let photos = [ // létrehozom a tömböt, amit objektumokkal töltök fel
   {
     source: 'images/0.firstDayAtHome.jpg',
     title: 'First day at home',
@@ -56,78 +56,55 @@ let photos = [
   }
 ];
 
-let currentPhoto = 0;
+function thumbNailer(photo, index){ //létrehozok egy funkciót, ami létrehoz, és feltölt egy thumblanilt - felveszek két függvényen belüli változót
+  $('.nail').append('<div class="thumbTitleHolder"><p class="thumbTitle"></p><img class="thumbNail"></img></div>'); // itt magát a html szerkezetet hozom létre
+  $('.nail .thumbTitleHolder:last .thumbTitle').append(photo.title); // az utolsóként megjelent thumbTitleHolder classban lévő thumbTitle classba beteszem a 'photo'adik elemét az objektum title kulcsának értékét
+  $('.nail .thumbTitleHolder:last img').attr('src', photo.source); // az utolsóként megjelent thumbTitleHolder classban lévő img-nek megadom a source attribútumát a fent leírt módon
+  $('.nail .thumbTitleHolder:last img').attr('data-number', index); // az utolsóként megjelent thumbTitleHolder classban lévő img-nek adok egy data-number attribútumot, aminek az index értéket adom
+}                                                                   // ez az index mindig a függvénymeghívás után a tömb elemeinek az inexedik elemét fogja megadni értékül
+                                                                    // azaz 0-tól kezdve mondhatni beszámozza a képeket, így később lehet ezzel az értékkel dolgozni, de a data-number értéke string lesz
+photos.forEach(thumbNailer); // meghívom a thumbNailer függvényt, ami a photos tömbön hajtódik végre minden elemen, így jönnek létre a thumbnailek
+                             // fontos, hogy először a thumbnaileket kell létrehozni, hogy az épp "aktív" elem "láthatóságát" meg lehessen oldani
+let currentPhoto = 0; // létrehozok egy változót, amiben az "aktív" fotó "sorszámát" fogom eltárolni - kezdő értéke a 0 (0.elem)
 
-let loadPhoto = (photoNumber) => {
-  $('#photo').attr('src', photos[photoNumber].source);
-  $('#photoTitle').text(photos[photoNumber].title);
-  $('#description').text(photos[photoNumber].description);
+let loadPhoto = (photoNumber) => { // létrehozok egy loadPhoto változót, és függvényt - felveszek egy függvényen belüli változót
+  $('#photo').attr('src', photos[photoNumber].source); // megadom a #photo id forrás attribútumát -> a photos tömb photoNumber-edik elemének a source kulcs értéke
+  $('#photoTitle').text(photos[photoNumber].title); // megadom a #photoTitle id szövegét -> a photos tömb photoNumber-edik elemének a title kulcs értéke
+  $('#description').text(photos[photoNumber].description); // megadom a #description id szövegét -> a photos tömb photoNumber-edik elemének a description kulcs értéke
+  $('.nail .thumbTitleHolder:eq(' + currentPhoto + ') img').css('box-shadow', '5px 5px 15px gray'); // beállítom a thumbnail fényképére a sötét "passzív" árnyékolást - a currentPhoto-adik elemre
+  $('.nail .thumbTitleHolder:eq(' + photoNumber + ') img').css('box-shadow', '5px 5px 15px white'); // beállítom a thumbnail fényképére a világos "aktív" árnyékolást - a photoNumber-edik elemre
+} // a photoNumber a függvényen belüli változónk mindig az aktuálisan megjelenített elem "sorszámát" fogja értékként kapni, a currentPhoto az ezt megelőző értéket fogja eltárolni (az alábbiakban létrehozott nextPhoto változó miatt), így, ahogy tovább lapozunk "visszasötétedik" a passzívvá vált fotó árnyékolása
 
-  let dataNumber = $('.thumbNail').attr('data-number');
-  let numberIndex = parseInt(dataNumber);
+loadPhoto(currentPhoto); //meghívom a loadPhoto fügvénnyt minek értéke a currentPhoto lesz, minek kezdőértékként a 0-t adtam meg, tehát elsőként a tömböm 0. eleme fog betölteni
 
-  if(photoNumber==numberIndex){
-    $('.thumbNail').css('box-shadow', '5px 5px 15px white');
-    /* let previous = photoNumber;
-    if(previous==$('.thumbNail:data-number')){
-    $('.thumbNail').css('box-shadow', '5px 5px 15px gray');
-    } */
+$('#right').click(() => { //létrehozok egy funkciót a jobb kattintáshoz
+  let nextPhoto = currentPhoto; //létrehozok egy új változót, ami a currentPhoto értékét veszi fel
+  if(currentPhoto < (photos.length-1)){ // megadom a feltételt - ha a currentPhoto kisebb, mint 10 (a tömbben 11 elem van, de mivel 0-tól számozódik, ezért ebben az esetben itt a 10-et kell megadni)
+    nextPhoto++; // megadom a "történést" - növeld a nextPhoto-t (eggyel fogja növelni nyilván)
+  }else{ // különben, azaz más esetben
+    nextPhoto=0; // a nextPhoto legyen egyenlő 0-val, azaz a tömb első elemével (ha már nincs következő elem), így lesz "körbelapozható" a képgaléria
   }
-
-}
-
-loadPhoto(currentPhoto);
-
-$('#right').click(() => {
-  if(currentPhoto < 10){ /* if(currentPhoto < photos.lenght) */
-    currentPhoto++;
-  }else{
-    currentPhoto=0;
-  }
-  loadPhoto(currentPhoto);
+  loadPhoto(nextPhoto); // meghívom a loadPhoto-t és a nextPhoto értéket fogja kapni - így mindig az éppen aktuálisan "aktív" kép "sorszámát" fogja eltárolni a nextPhoto, és ekkor a currentPhoto még az előzőleg megjelenített fotó "értékét" fogja tárolni, így felhasználható a már "inaktívvá" vált thumbnail visszasötétítéséhez
+  currentPhoto = nextPhoto; // a currentPhotonak visszaadom a nextPhoto értékét
 })
 
-$('#left').click(() => {
+$('#left').click(() => { //létrehozok egy funkciót bal kattintáshoz, ami ugyanúgy működik, mint a jobb kattintás, csak visszafelé
+  let nextPhoto = currentPhoto;
   if(currentPhoto > 0){
-    currentPhoto--;
+    nextPhoto--;
   }else{
-    currentPhoto=10; /* currentPhoto=photos.lenght; */
-  }
-  loadPhoto(currentPhoto);
+    nextPhoto= (photos.length-1); // a photos.length a tömb elemeinek a száma, ami 11, mert a photos.length 1-től számol, a tömb elemeinek indexe viszont 0-tól indul,
+  }                               // ezért a photos.length-ből ki kell vonni egyet - így később nem kell átírni a függvényt, ha tovább bővítem, vagy csökkentem a képgalériám objektumait
+  loadPhoto(nextPhoto);
+  currentPhoto = nextPhoto;
 })
 
-function thumbNailer(photo, index){
-  $('.nail').append('<div class="thumbTitleHolder"><p class="thumbTitle"></p><img class="thumbNail"></img></div>');
-  $('.nail .thumbTitleHolder:last .thumbTitle').append(photo.title);
-  $('.nail .thumbTitleHolder:last img').attr('src', photo.source);
-  $('.nail .thumbTitleHolder:last img').attr('data-number', index);
-} 
-
-photos.forEach(thumbNailer); 
-
-$('.thumbNail').click(function(event){
-  let clickIndex = $(event.target).attr('data-number');
-  let numberIndex = parseInt(clickIndex);
-  loadPhoto(numberIndex);
+$('.thumbNail').click(function(event){ // létrehozok egy funkciót, ami a thumbnailekre való kattintást kezeli
+  let clickIndex = parseInt($(event.target).attr('data-number')); // létrehozok egy változót, aminek a thumbnailek data-number értékét számmá alakítva adom át
+  loadPhoto(clickIndex); // a loadPhoto meghívásakor ezt a számot adom értékül, így a thumbnailre kattintva a tömbből a megfelelő fotó fog betölteni
+  currentPhoto = clickIndex; // majd a currentPhotónak megadom a ClickIndex értéket, hogy lapozás esetén tudja az "inaktívvá" vált fotó "sorszámát" így a továbblapozás, és a sötétítés onnan fog folytatódni
 })
 
-let dataNumber = $('.thumbNail').attr('data-number');
-let numberIndex = parseInt(dataNumber);
-
-/*
-  if(currentPhoto==$('.thumbNail').attr('data-number'){
-    $('.thumbNail').css('box-shadow', '5px 5px 15px white');
-  }
-*/
-
-/*
-  if(numberIndex==currentPhoto){
-    $('.thumbNail').css('box-shadow', '5px 5px 15px white');
-  }
-*/
-
-/*
-  if(currentPhoto==numberIndex){
-    $('.thumbNail:data-number="numberIndex"').css('box-shadow', '5px 5px 15px white');
-  }
-*/
+/* A thumbnailek kivilágosodása, ha föléjük viszem az egeret, és a képek "aktivitásának" láthatósága azért nem üti egymást, és nem bugosodik be, 
+mert egyrész ugyanazt az árnyékolást használom, mésrészt az aktivitást az img-en állítottam be a hover funkciót meg az img dobozán.
+Ebben az esetben ez nem feltűnő, csak annak, aki nagyon figyel.*/
