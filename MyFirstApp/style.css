@@ -83,7 +83,7 @@ flex-direction: column;
     width: 60px;
     height: 60px;
     margin: 0px 10px 0 10px;
-    box-shadow: 5px 5px 15px gray;
+    box-shadow: 5px 5px 15px gray; 
     border-radius: 20px;
     border: solid;
     border-width: 3px;
@@ -94,6 +94,7 @@ flex-direction: column;
 .thumbNail:hover{
     box-shadow: 5px 5px 15px white; 
 }
+
 
 .thumbTitleHolder{
     display: flex;
