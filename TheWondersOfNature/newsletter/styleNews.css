@@ -57,17 +57,16 @@
 width: auto;
 }
 
-
 .fas{
 margin: 7px;
 font-size: 22px;
-color: black;
+
 }
 
 .fab{
     margin: 11px;
     font-size: 22px;
-    color: black;
+    
 }
 
 .buttonTitle{
@@ -95,37 +94,99 @@ color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 900px;
 }
 
-.pictureHolder{
-    display: flex;
-    width: 900px;
-    margin: 50px;
-    box-shadow: 0 25px 50px 0;
-    position: relative;
-    flex-direction: column;
+ /*Eddig az idex.html-hez tartozó style.css-ből másoltam ki, mert ugyanaz a formázás kell.*/
+ /* Viszont innentől már másra is szükségem lesz.*/
+
+.subtitle{
     text-align: center;
-    justify-content: center;
+    margin: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
 }
 
-.picture{
-    width: 900px;
+#cardHolder {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.textHolder{
-    position: absolute;
-    bottom: 0px;
-    width: 900px;
-    background-color: rgba(0, 0, 0, 0.479);
+.card {
+    background-color: rgb(71, 70, 70);
+    width: 180px;
+    text-align: center;
+    color: antiquewhite;
+    padding: 20px 0px;
+    box-shadow: 0px 15px 25px 0px rgb(8, 8, 8);
 }
 
-.text{
-    margin: 15px;
+.card .fas{
+    font-size: 50px;
+}
+
+.stripeNews{
+    background-color: black;
+    max-width: 900px;
+    height: 2px;
+}
+
+.newslwtter h3{
+    margin-top: 0;
+  }
+  
+.newsletter{
+    background-color: rgba(0, 0, 0, 0.205);
+    
+    border:solid thin #6b6b6b;
+    border-radius:3px;
+    padding:10px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+  
+.newsletter button{
+    background-color: rgb(71, 70, 70);
+    border:none;
     color: white;
+    display:block;
+    width:100%;
+    height:30px;
+    margin-bottom: 10px;
+}
+  
+.newsletter input#email{
+    display:block;
+    width:100%;
+    height:30px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom:4px;
+    border:solid 1px #6b6b6b;
+    border-radius:3px;
+    box-sizing: border-box;
+}
+  
+.newsletter #terms{
+    position: relative;
+    top: 1px;
+}
+  
+.newsletter #closex{
+    position: absolute;
+    top:0;
+    right:4px;
 }
 
+
+.card .h3 {
+    margin-bottom: 0px;
+}
+
+/* Innentől pedig megint az idex.html-hez tartozó style.css formázása kell.*/
 .questionmark{
     position: fixed;
     bottom: 50px;
@@ -161,10 +222,10 @@ color: black;
 }
 
 body{
- /*  background-image: url('backgound/splash-acrylic.png'); */
-    background-image: url('backgound/clouds.jpg');
+ /* ha egy mappával kintebb akarunk lépni, akkor /kintebbimappanév/bennelévőkép.kiterjesztés-sel tudunk rá hivatkozni*/
+    background-image: url('/backgound/clouds.jpg');
     background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: no-repeat; /* A háttér nem ismétlődik. */
+    background-attachment: fixed; /* A háttér lefixálása. */
     font-family: 'Oxygen', sans-serif;
 }
