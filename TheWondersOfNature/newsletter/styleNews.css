@@ -223,7 +223,7 @@ font-size: 22px;
 
 body{
  /* ha egy mappával kintebb akarunk lépni, akkor /kintebbimappanév/bennelévőkép.kiterjesztés-sel tudunk rá hivatkozni*/
-    background-image: url('/backgound/clouds.jpg');
+    background-image: url('backgound/clouds.jpg');
     background-size: auto;
     background-repeat: no-repeat; /* A háttér nem ismétlődik. */
     background-attachment: fixed; /* A háttér lefixálása. */
