@@ -1,3 +1,16 @@
+body{
+    /*  background-image: url('backgound/splash-acrylic.png'); */
+       background-image: url('backgound/clouds.jpg');
+       background-size: auto;
+       background-repeat: no-repeat; /* A háttér nem ismétlődik. */
+       background-attachment: fixed; /* A háttér lefixálása. */
+       font-family: 'Oxygen', sans-serif;
+       overflow-y:scroll; /* Mindig megjeleníti a csúszkát függetlenül attól, hogy van-e tartalom */
+       @media print {
+           background-image: none; /* Ha nyomtatni szeretném az oldalt, leveszi a hátteret. */
+       }
+   }
+
 .container{
     /* background-color: aquamarine; */
     width: 1200px;
@@ -160,11 +173,3 @@ color: black;
     text-decoration: none; 
 }
 
-body{
- /*  background-image: url('backgound/splash-acrylic.png'); */
-    background-image: url('backgound/clouds.jpg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Oxygen', sans-serif;
-}
