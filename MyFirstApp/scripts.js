@@ -1,58 +1,53 @@
 let photos = [ // létrehozom a tömböt, amit objektumokkal töltök fel
   {
-    source: 'images/0.firstDayAtHome.jpg',
-    title: 'First day at home',
-    description: 'When I was born, I was very small. My weight barely exceeded 2.5 pounds and I was only 48 inches tall.'  
+    source: 'images/lotus.jpg',
+    title: 'Lotus',
+    description: 'Because lotuses rise from the mud without stains, they are often viewed as a symbol of purity. Since they return to the murky water each evening and open their blooms at the break of day, lotus flowers are also symbols of strength, resilience, and rebirth'  
   },
   {
-    source: 'images/1.myFirstFriend.jpg',
-    title: 'My first friend',
-    description: 'I was finally able to meet my first friend, whom I met in my mother’s tummy.'  
+    source: 'images/tulips.jpg',
+    title: 'Tulips',
+    description: 'The most known meaning of tulips is perfect and deep love. As tulips are a classic flower that has been loved by many for centuries they have been attached with the meaning of love. They’re ideal to give to someone who you have a deep, unconditional love for, whether it’s your partner, children, parents or siblings.'  
   },
   {
-    source: 'images/2.inMyBad.jpg',
-    title: 'The two toothless in the crib',
-    description: 'Mom and Dad had a very tiny apartment at first, so I slept in my stroller for the first few weeks. But eventually I had my own crib.'  
+    source: 'images/rose.jpg',
+    title: 'Rose',
+    description: 'A rose’s symbolism varies by the color of the rose and how many roses are given. Red roses symbolize love and romance and are the perfect Valentine’s Day rose. Pink roses symbolize gratitude, grace, admiration, and joy. Orange roses symbolize enthusiasm and passion.'  
   },
   {
-    source: 'images/3.sleepingOnMom.jpg',
-    title: 'Snooze on moms tummy',
-    description: 'No one should think I slept all day. But only then could mother take a picture of me. I am forever-moving!'  
+    source: 'images/pipacs.jpg',
+    title: 'Poppies',
+    description: 'Our red poppy is a symbol of both Remembrance and hope for a peaceful future. Poppies are worn as a show of support for the Armed Forces community. The poppy is a well-known and well-established symbol, one that carries a wealth of history and meaning with it.'  
   },
   {
-    source: 'images/4.sleepingWhilePlaying.jpg',
-    title: 'Falling asleep while playing',
-    description: 'Sometimes it happens to me that I fall asleep. Of course I do not want to sleep. But in the end, the dream elves wins.'  
+    source: 'images/cherry-blossoms.jpg',
+    title: 'Cherry Blossoms',
+    description: 'The national flower of Japan, the cherry blossom – or Sakura, represents a time of renewal and optimism. The pops of pink mark the ending of winter and signify the beginning of spring. Due to their quick blooming season, cherry blossoms also symbolize the transience of life, a major theme in Buddhism.'  
   },
   {
-    source: 'images/5.ChristmasGift.jpg',
-    title: 'Super Christmas gift',
-    description: 'For Christmas, I got a super Mickey mouse with pants as blue as my eyes.'  
+    source: 'images/sunflower.jpg',
+    title: 'Sunflower',
+    description: 'Sunflowers symbolise loyalty, adoration thanks to the myth of Clytie and Apollo. And, because of their association with the sun, sunflowers are well-known for being a happy flower and the perfect bloom for a summer flower delivery to brighten someone’s mood!'  
   },
   {
-    source: 'images/6.SmileForEver.jpg',
-    title: 'My smile',
-    description: 'I’m a very happy baby, so I smile a lot. Mom always says my smile is the most beautiful thing she has ever seen.'  
+    source: 'images/pitypang.jpg',
+    title: 'Blow ball of Dandelion',
+    description: 'Kids and adults alike pick the seed head – known as a clock in America and Europe for its shape – and blow the Dandelion seeds away while making a wish. This has given the flower a strong association with hope, optimism, and wishes.'  
   },
   {
-    source: 'images/7.LearnToClimb.jpg',
-    title: 'Learning to climb',
-    description: 'It was a huge pleasure when I finally managed to learn to climb. I roared for two weeks before that, almost chasing my parents crazy.'  
+    source: 'images/water-lily.jpg',
+    title: 'Water Lily',
+    description: 'The Nymphaea waterlilies perfectly symbolise innocence, purity, fertility, pleasure, celebration, hope, rebirth, wellness, and peace. All ancient cultures around the world have associated the white lilies with gods and spirituality.'  
   },
   {
-    source: 'images/8.cuteFace.JPG',
-    title: 'This is my cute face',
-    description: 'This is Mom and Dads favorite picture of me. They can never resist my cute-face. They just love me for ever.'  
+    source: 'images/margareta.jpg',
+    title: 'Daisy',
+    description: 'Daisies symbolize innocence and purity. This stems from an old Celtic legend. According to the legend, whenever an infant died, God sprinkled daisies over the earth to cheer the parents up. In Norse mythology, the daisy is Freya’s sacred flower.'  
   },
   {
-    source: 'images/9.handsomeFace.JPG',
-    title: 'The handsome guy',
-    description: 'Well, that is what this is about. They force me into an uncomfortable outfit, they put me in a wheelbarrow, but I’m still handsome. - Hi kitty! Do you have a master?'  
-  },
-  {
-    source: 'images/10.coolBaby.JPG',
-    title: 'Cool driver',
-    description: 'I am a cool driver. But really. I learn to drive rather than walk without help. A license at the age of half a year? Done!'  
+    source: 'images/kokorcsin.jpg',
+    title: 'Pasque Flower',
+    description: 'In Christian symbology, the pasque flower is associated with ideas of rebirth, dignity, nobility, and grace. It relates to the Easter holiday, and its purple pigmentation was used in olden times to color and stain Easter eggs.'  
   }
 ];
 

@@ -25,7 +25,7 @@ flex-direction: column;
 
 
 #photo{
-    width: 400px;
+    width: 850px;
     height: auto;
 }
 
@@ -40,7 +40,7 @@ flex-direction: column;
 #shadowText{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 850px;
     font-family: 'Nunito', sans-serif;
     color: white;
     position: absolute;
