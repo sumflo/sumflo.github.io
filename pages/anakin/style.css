@@ -1,0 +1,349 @@
+.container {
+  margin: auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.introduction{
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+.hi {
+  margin: 0;
+  height:25px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.name {
+  margin: 0;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.line{
+  font-family: 'Abril Fatface', cursive;
+}
+
+.main {
+  margin: auto;
+  width: 650px;
+  line-height: 140%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 550px;
+}
+
+.marked {
+  display: block;
+  width: 650px;
+  font-size: 42px;
+  line-height: 140%;
+  background-color: #525354;
+  color: white;
+  font-weight: normal;
+  padding: 35px;
+  margin: 0px;
+  
+}
+
+.marked::before {
+  content: '”';
+}
+
+li {
+  list-style-type: square;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #222;
+}
+
+.heading {
+  display: block;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #222;
+  font-variant: small-caps;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.zero {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #222;
+}
+
+.text {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #222;
+  font-size: 13px;
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #222;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.stripe {
+  width: 650px;
+  height: 2px;
+  background-color: black;
+  margin: 0px;
+}
+
+.linkbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
+
+.in {
+  color:#525354;
+  font-family: 'Satisfy', cursive;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0 0 0 10px ;
+}
+
+.inlink {
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  color:#525354;
+  margin: 0 10px;
+}
+
+.linkbutton:hover {
+  box-shadow: 0 0 1px 0 rgb(0 0 0 / 20%);
+  color: black;
+}
+
+.in:hover {
+  color: black;
+}
+
+.inlink:hover {
+  color: black;
+} 
+
+.fakebuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  align-content: stretch;
+  height: 50px;
+}
+
+.commenticon {
+  font-family: 'Josefin Sans', sans-serif;
+  color:#525354;
+  line-height: 0px;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0 5px 0 20px;
+}
+
+.commenttext {
+  font-family: 'Josefin Sans', sans-serif;
+  color:#525354;
+  margin: 0 10px 0 5px;
+  overflow: hidden;
+}
+
+.commenticon:hover {
+  color: black;
+}
+
+.commenttext:hover {
+  color: black;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  position: absolute fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  margin: 0 5px;
+}
+
+.section:hover {
+  box-shadow: 0 0 1px 0 rgb(0 0 0 / 20%);
+  color: black;
+  width: auto;
+}
+
+.inspecttext {
+  font-family: 'Josefin Sans', sans-serif;
+  color:#525354;
+  margin: 0 10px 0 5px;
+  overflow: hidden;
+}
+
+.inspecticon {
+  font-family: 'Josefin Sans', sans-serif;
+  color:#525354;
+  line-height: 0px;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 5px 0 20px;
+}
+
+.inspecticon:hover {
+  color: black;
+}
+
+.inspecttext:hover {
+  color: black;
+}
+
+.screenstext {
+  font-family: 'Josefin Sans', sans-serif;
+  color:#525354;
+  margin: 0 10px 0 5px;
+  overflow: hidden;
+}
+
+.screensicon {
+  font-family: 'Josefin Sans', sans-serif;
+  color:#525354;
+  line-height: 0px;
+  font-size: 20px;
+  margin: 0 5px 0 20px;
+}
+
+.screensicon:hover {
+  color: black;
+}
+
+.screenstext:hover {
+  color: black;
+}
+
+.lefthalfcyrcle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 75px;
+  height: 150px;
+  border-radius: 0 75px 75px 0;
+  background-color: #D8D8D8;
+  left: -50px;
+  position: fixed;
+  top: 50%;
+}
+
+.halfcyrcle {
+  margin: 20px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+}
+
+.lefthalfcyrcle:hover {
+  background-color: #525354;
+  left: 0%;
+}
+
+.righthalfcyrcle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 75px;
+  height: 150px;
+  border-radius: 75px 0 0 75px;
+  background-color: #D8D8D8;
+  margin-right: -50px;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+}
+
+.halfcyrcle {
+  margin: 25px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+}
+
+.righthalfcyrcle:hover {
+  background-color: #525354;
+  right: 50px;
+}
+
+.backbutton{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #525354;
+  border-radius:50%;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 6px;
+}
+
+#back{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.backbutton:hover{
+  background-color: white;
+  color: #525354;
+}
+
+#back:hover{
+  color: #565756;
+}
