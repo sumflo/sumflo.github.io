@@ -173,3 +173,68 @@ color: black;
     text-decoration: none; 
 }
 
+/* RESPONSIVE STYLE - MEDIUM */
+
+@media only screen and (max-width: 1400px) { /* 1200px */
+
+    .container{
+        width: 1000px;
+    }
+    
+    .stripe{
+        width: 800px;
+    }
+    
+    .buttonHolder{
+        width: 370px;
+    }
+
+    .content{
+        width: 700px;
+    }
+    
+    .pictureHolder{
+        width: 700px;
+    }
+    
+    .picture{
+        width: 700px;
+    }
+    
+    .textHolder{
+        width: 700px;
+    }
+  }
+
+  /* RESPONSIVE STYLE - SMALL */
+
+@media only screen and (max-width: 800px) {
+
+    .container{
+        width: 475px;
+    }
+    
+    .stripe{
+        width: 450px;
+    }
+    
+    .buttonHolder{
+        width: 370px;
+    }
+
+    .content{
+        width: 400px;
+    }
+    
+    .pictureHolder{
+        width: 400px;
+    }
+    
+    .picture{
+        width: 400px;
+    }
+    
+    .textHolder{
+        width: 400px;
+    }
+  }
