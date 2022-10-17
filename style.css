@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
 /* HEADER STYLE */
 
 .headercontainer{
@@ -70,8 +75,19 @@
     padding-left: 2rem;
     padding-bottom: 1rem;
     padding-right: 2rem;
-    background-color: hwb(221 17% 62% / 0.301);
+    background-color: hwb(221 17% 62% / 0.829);
+    border-color: hwb(221 17% 62% / 0.829);
     border-radius: 5px;
+}
+
+.websiteTitle{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.websiteText{
+    font-family: 'Inconsolata', monospace;
+    color: white;  
 }
 
 /* IMAGE STYLE */

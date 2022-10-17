@@ -7,7 +7,7 @@ body{
 }
 
 #container{
-width: 800px;
+width: 30%;
 margin: auto;
 padding-top: 5rem;
 display: flex;
@@ -160,4 +160,54 @@ flex-direction: column;
   
   #back:hover{
     color: #565756;
+  }
+
+  /* RESPONSIVE STYLE - MEDIUM */
+
+@media only screen and (max-width: 1200px) { /* 1024px */
+    
+    #photo{
+        width: 600px;
+        height: auto;
+    }
+    
+    #shadowText{
+        width: 600px;
+    }
+
+    #thumb{
+        flex-wrap: wrap;
+        width: 600px;
+    }
+  }
+
+    /* RESPONSIVE STYLE - SMALL */
+
+  @media only screen and (max-width: 800px) { /* 1024px */
+    
+    #photo{
+        width: 400px;
+        height: auto;
+    }
+    
+    #shadowText{
+        width: 400px;
+    }
+
+    #thumb{
+        flex-wrap: wrap;
+        width: 400px;
+    }
+
+    .arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 20px;
+        background-color: rgb(222, 231, 229);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
   }
