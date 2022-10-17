@@ -175,7 +175,7 @@ color: black;
 
 /* RESPONSIVE STYLE - MEDIUM */
 
-@media only screen and (max-width: 1400px) { /* 1200px */
+/* @media only screen and (max-width: 1400px) {
 
     .container{
         width: 1000px;
@@ -183,10 +183,6 @@ color: black;
     
     .stripe{
         width: 800px;
-    }
-    
-    .buttonHolder{
-        width: 370px;
     }
 
     .content{
@@ -204,11 +200,11 @@ color: black;
     .textHolder{
         width: 700px;
     }
-  }
+  } */
 
   /* RESPONSIVE STYLE - SMALL */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
 
     .container{
         width: 475px;
@@ -216,10 +212,6 @@ color: black;
     
     .stripe{
         width: 450px;
-    }
-    
-    .buttonHolder{
-        width: 370px;
     }
 
     .content{

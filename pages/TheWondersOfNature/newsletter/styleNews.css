@@ -97,7 +97,7 @@
 
 /* RESPONSIVE STYLE - MEDIUM */
 
-@media only screen and (max-width: 1400px) { /* 1200px */
+/* @media only screen and (max-width: 1400px) {
    
     .contentNewsletter{
         width: 700px;
@@ -123,11 +123,11 @@
     .stripeNews{
         max-width: 700px;
     }
-  }
+  } */
 
   /* RESPONSIVE STYLE - SMALL */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
 
     .contentNewsletter{
         width: 450px;
