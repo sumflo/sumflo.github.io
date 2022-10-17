@@ -175,7 +175,7 @@ color: black;
 
 /* RESPONSIVE STYLE - MEDIUM */
 
-@media only screen and (max-width: 1400px) { /* 1200px */
+/* @media only screen and (max-width: 1400px) {
 
     .container{
         width: 1000px;
@@ -205,10 +205,10 @@ color: black;
         width: 700px;
     }
   }
-
+ */
   /* RESPONSIVE STYLE - SMALL */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
 
     .container{
         width: 475px;
