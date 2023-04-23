@@ -1,0 +1,154 @@
+body{
+    background-image: url("picture/workspace.jpg");
+}
+
+.container {
+margin-top: 100px;
+margin-left: 400px;
+margin-right: auto;
+width: 300px;
+height: 600px;
+display:flex;
+flex-direction: column;
+border-radius: 50px;
+border:solid 5px;
+box-shadow: 0 25px 50px 0 rgb(0 0 0 / 100%);
+border-color: #081B26;
+}
+
+.header{
+    width: auto;
+    height: 175px;
+    /* background-image: url("picture/day.jpg"); */
+    background-size: cover;
+    border-radius: 44px 44px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+
+#date{
+    margin-left: 5px;
+    font-size: 24;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#timer{
+    font-size: 42;
+}
+
+p{
+    margin: 0;
+}
+
+.clear{
+    position: absolute;
+    margin-bottom: 120px;
+    margin-left: 240px;
+    height: 40px;
+    width: 40px;
+    font-size: 32px;
+    color: antiquewhite;
+}
+
+.content{
+    width: auto;
+    height: 350px;
+    background-color: antiquewhite;
+    overflow: auto; /* Ha túlmegy a tartalom a box lefixált hosszán, görgethetővé válik.*/
+}
+
+.add-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 75px;
+    background-color: rgb(46, 45, 45);
+    border-radius: 0px 0px 44px 44px;
+}
+
+.footer{
+    background-color: white;
+}
+
+#input{
+    height: 40px;
+    width: 190px;
+    border-radius: 15px;
+    border: solid;
+    border-color: white;
+}
+
+#input:focus{
+    outline: none; /* Leveszi az idegesítő villogó keretet, ha belekattintasz az input mezőbe.*/
+    border: 5px solid black;
+}
+
+input::placeholder {
+    padding-left: 5px;
+  }
+
+#add{
+    margin-left: 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: 0px;
+    background: rgb(163, 157, 157);
+}
+
+#add:hover {
+    border: solid black;
+    }
+
+#list{
+    font-family: Open Sans;
+}
+
+.fa-check{
+    color: green;
+    margin: 3px;
+}
+
+.fa-trash{
+    color: red;
+    margin: 3px;
+}
+
+.todo{
+    display:flex;
+    flex-direction: row;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.backbutton{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius:50%;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 18px;
+}
+
+#back{
+    color: white;
+    text-decoration: none; 
+}
