@@ -1,0 +1,67 @@
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    border-radius: 8rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 3rem rgb(0, 0, 0, .2);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn:active,
+.btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.btn::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-green {
+    background-color: var(--color-secondary-dark);
+    color: white;
+}
+
+.btn-green::after {
+    background-color: var(--color-secondary-dark);
+}
+
+.btn-secondary {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    animation: wobble-horizontal 1s ease-in-out 1;
+}

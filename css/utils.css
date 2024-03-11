@@ -1,0 +1,15 @@
+.mb-small {margin-bottom: 1.5rem;}
+
+.mb-medium {margin-bottom: 3rem;}
+
+.mb-large {margin-bottom: 8rem;}
+
+.p-side {padding: 0 3rem;}
+
+.lh-small {line-height: 1;}
+
+.animation-l {animation: moveInLeft 3s ease-out;}
+
+.animation-r {animation: moveInRight 3s ease-out;}
+
+.fw-thin {font-weight: 300;}

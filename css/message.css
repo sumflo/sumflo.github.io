@@ -1,0 +1,11 @@
+.message {
+    position: fixed;
+    top: 18%;
+    left: 0;
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: rgba(0,0,0, .2);
+    font-family: var(--font-primary);
+    font-size: 5rem;
+    text-transform: uppercase;
+}

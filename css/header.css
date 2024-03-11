@@ -1,0 +1,32 @@
+.header {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8), 
+        rgba(247,191,184, .8)),
+        url(/img/flower.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.header-intro {
+    width: 40%;
+    padding: 6rem;
+}
+
+.header-img-container {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-img {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 1rem 3rem rgb(0, 0, 0, .2);
+}
