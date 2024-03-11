@@ -1,32 +1,164 @@
 <!DOCTYPE html>
-<html>
-
+<html lang='en'>
 <head>
-    <title>MyWorks</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap' rel='stylesheet'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' integrity='sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <link rel='stylesheet' href='style.css'>
+    <title>Flora WebDev | CodeFolio</title>
 </head>
-
-<body> 
-    <div class="container">
-
-        <div class="headercontainer">
-            <div class="headerstripe"></div>
-            <div class="header box">
-                <h1 class="title">My Works</h1>
-            </div>
-            <div class="headerstripe"></div>
+<body class='container p-side'>
+    <div class='navigation'>
+        <div class='logo'>
+            <h4 class='web-dev'>&lt;Flora WebDev/&gt;</h4>
         </div>
-
-        <div class="websiteDescriptions">
-        </div>
-
+        <ul class='navigation-container'>
+            <li class='navigation-item'><a href='#about' class='navigation-link'>About</a></li>
+            <li class='navigation-item'><a href='#values' class='navigation-link'>Core Values</a></li>
+            <li class='navigation-item'><a href='#projects' class='navigation-link'>Projects</a></li>
+            <li class='navigation-item'><a href='#technologies' class='navigation-link'>Technologies</a></li>
+            <li class='navigation-item'><a href='#app-footer' class='navigation-link'>Contact</a></li>
+        </ul>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script> 
+    <header class='header' id='app-header'>
+        <div class='header-intro'>
+            <h2 class='heading-2 mb-medium animation-l'>Hi, I'm Flora</h2>
+            <h1 class='heading-1 lh-small mb-medium animation-r'>I'm a web developer</h1>
+            <p class='text mb-medium animation-l'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis et hendrerit mi. Phasellus interdum quam urna, a vehicula turpis fringilla nec. 
+                Aliquam auctor sit amet eros quis dapibus. 
+                Nam sit amet felis est. Fusce id ligula lectus.
+            </p>
+            <a href='#app-footer' class='btn btn-green animation-r'>contact me</a>
+        </div>
+        <div class='header-img-container'>
+            <img src='/img/profil-square.jpg' alt='profile picture' class='header-img'>
+        </div>
+    </header>
+
+    <section class='section-about' id='about'>
+        <div class='section-about-img-container'>
+        <img src='/img/profil.jpg' alt='profile picture' class='section-about-img'>
+        </div>
+        <div class='section-about-text-container'>
+            <h3 class='heading-3 mb-medium'>About me...</h3>
+            <p class='text mb-small'>
+                Hi! I am Flora Konkoly-Sumegi. I am a - career changer - junior frontend developer. 
+                Although junior is a broad term nowadays, I would rather call myself a padavan.
+            </p>
+            <p class='text mb-small'>
+                After completing a seven-month Java & SpiringBoot backend developer bootcamp, 
+                I went from kindergarten teacher to frontend developer. Yeees... The force is with me.
+            </p>
+            <p class='text'>
+                I am proud to say that I have been working in my first development job for almost two years now, 
+                where I have learned from two amazing Masters and I hope to continue learning from them for a long time to come, 
+                and soon I'll be a true Jedi myself.
+            </p>
+        </div>
+    </section>
+
+    <section class='section-values' id='values'>
+        <h4 class='heading-4 heading-4-shadow mb-large'>Core values & Principles</h4>
+        <div class='values'>
+            <div class='value'>
+                <i class='fa-solid fa-shower value-icon'></i>
+                <h2 class='heading-2 mb-small'>Clean code</h2>
+                <p class='text fw-thin'>I strive to write clean code that is easy to understand and maintain. Code quality is a top priority, as it promotes efficient development and teamwork in the long term.</p>
+            </div>
+            <div class='value'>
+                <i class='fa-solid fa-recycle value-icon'></i>
+                <h2 class='heading-2 mb-small'>Reusability</h2>
+                <p class='text fw-thin'>...or laziness. The reusability of code is important. I separate repetitive elements and functions so that they can easily be used again. Why would I implement something twice?</p>
+            </div>
+            <div class='value'>
+                <i class='fa-solid fa-bug-slash value-icon'></i>
+                <h2 class='heading-2 mb-small'>Don't write a bug</h2>
+                <p class='text fw-thin'>Sometimes it's not easy, is it? But let's face it, there's no other way to write code that works. This lesson is crucial for quality work.</p>
+            </div>
+            <div class='value'>
+                <i class='fa-solid fa-book-open-reader value-icon'></i>
+                <h2 class='heading-2 mb-small'>Keep learning</h2>
+                <p class='text fw-thin'>As a Padavan, it is essential that I constantly strive to learn new things and develop professionally. Learning and development never stops to keep up with technological changes.</p>
+            </div>
+            <div class='value'>
+                <i class='fa-solid fa-hand-fist value-icon'></i>
+                <h2 class='heading-2 mb-small'>Never give up</h2>
+                <p class='text fw-thin'>Commitment and perseverance are essential for me. I am determined and never give up, believing in the long-term results of hard work.</p>
+            </div>
+            <div class='value'>
+                <i class='fa-regular fa-face-smile-beam value-icon'></i>
+                <h2 class='heading-2 mb-small'>Always smile</h2>
+                <p class='text fw-thin'>A good atmosphere and a positive attitude are key to good performance. I always face challenges with a smile and I hope to share this energy with everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class='section-projects' id='projects'>
+        <h3 class='heading-3 mb-large'>Projects</h3>
+        <div class='project-container'>
+            <div class='project-card'>
+                <img src='/img/projects/anakin.PNG' alt='' class='project-img mb-medium'>
+                <h2 class='heading-2 mb-medium'>Anakin CV</h2>
+                <div class='project-description p-side'>
+                    <p class='text fw-thin mb-medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus, est bibendum egestas lobortis, quam mauris aliquam nisi, sed pharetra leo diam non erat. Nulla nec aliquet ligula.</p>
+                    <a href='#' class='btn-secondary mb-medium'>Visit  &rarr;</a>
+                </div>
+            </div>
+            <div class='project-card'>
+                <img src='/img/projects/myFirstApp.PNG' alt='' class='project-img mb-medium'>
+                <h2 class='heading-2 mb-medium'>MyFirstApp#</h2>
+                <div class='project-description p-side'>
+                    <p class='text fw-thin mb-medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus, est bibendum egestas lobortis, quam mauris aliquam nisi, sed pharetra leo diam non erat. Nulla nec aliquet ligula.</p>
+                    <a href='#' class='btn-secondary mb-medium'>Visit  &rarr;</a>
+                </div>
+            </div>
+            <div class='project-card'>
+                <img src='/img/projects/myWebsite.PNG' alt='' class='project-img mb-medium'>
+                <h2 class='heading-2 mb-medium'>Portfolio</h2>
+                <div class='project-description p-side'>
+                    <p class='text fw-thin mb-medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus, est bibendum egestas lobortis, quam mauris aliquam nisi, sed pharetra leo diam non erat. Nulla nec aliquet ligula.</p>
+                    <a href='#' class='btn-secondary mb-medium'>Visit  &rarr;</a>
+                </div>
+            </div>
+            <div class='project-card'>
+                <img src='/img/projects/wonders.PNG' alt='' class='project-img mb-medium'>
+                <h2 class='heading-2 mb-medium'>Worders of Nature</h2>
+                <div class='project-description p-side'>
+                    <p class='text fw-thin mb-medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus, est bibendum egestas lobortis, quam mauris aliquam nisi, sed pharetra leo diam non erat. Nulla nec aliquet ligula.</p>
+                    <a href='#' class='btn-secondary mb-medium'>Visit  &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class='section-technologies' id='technologies'>
+        <h4 class='heading-4 heading-4-lines mb-large'>The technologies I work with</h4>
+        <div class='technology-gallery'>
+            <figure class='technology-item technology-item-1'><img src='/img/tech/bootstrap.png' alt='technology' class='technology-img'></figure>
+            <figure class='technology-item technology-item-2'><img src='/img/tech/sass.png' alt='technology' class='technology-img'></figure>
+            <figure class='technology-item technology-item-3'><img src='/img/tech/HTML.png' alt='technology' class='technology-img'></figure>
+            <figure class='technology-item technology-item-4'><img src='/img/tech/JS.png' alt='technology' class='technology-img'></figure>
+            <figure class='technology-item technology-item-5'><img src='/img/tech/TS.png' alt='technology' class='technology-img'></figure>
+            <figure class='technology-item technology-item-6'><img src='/img/tech/react.png' alt='technology' class='technology-img'></figure>
+            <figure class='technology-item technology-item-7'><img src='/img/tech/github.png' alt='technology' class='technology-img'></figure>
+            <figure class='technology-item technology-item-8'><img src='/img/tech/cypress.png' alt='technology' class='technology-img'></figure>
+            <figure class='technology-item technology-item-9'><img src='/img/tech/jest.png' alt='technology' class='technology-img'></figure>
+            <figure class='technology-item technology-item-10'><img src='/img/tech/angular.png' alt='technology' class='technology-img'></figure>
+        </div>
+    </section>
+
+    <footer class='footer' id='app-footer'>FOOTER</footer>
+
+    <div class='message'>Under development</div>
 </body>
-
 </html>
-
-<!-- "https://sumflo.github.io/" -->

@@ -16,7 +16,7 @@ const hobbyProjects = [
     {
         id: 3,
         title: 'MyFirstApp',
-        text: 'The first app I made. The final project of #MyFirstApp Coding Camp. This is how I understood the essence of programming. This was my main practice project.',
+        text: 'The first app I made a picture viwer. The final project of #MyFirstApp Coding Camp. This is how I understood the essence of programming. This was my main practice project.',
         image: 'images/myFirstApp.PNG',
         ref: '/pages/MyFirstApp/index.html',
     },
@@ -30,9 +30,16 @@ const hobbyProjects = [
     {
         id: 5,
         title: 'My Website',
-        text: 'This project I made it as part of dr. Angels Yu - The Complete 2022 Web Development Bootcamp.',
+        text: 'I made this project as a part of dr. Angels Yu - The Complete 2022 Web Development Bootcamp. It is not responsive.',
         image: 'images/myWebsite.PNG',
         ref: '/pages/MyWebsite/index.html',
+    },
+    {
+        id: 6,
+        title: 'ToDo List',
+        text: 'One of essential element among the work of most programming apprentices is the to-do list. So, I also made one for fun.',
+        image: 'images/toDo.PNG',
+        ref: '/pages/ToDoList/index.html',
     },
 ]
 

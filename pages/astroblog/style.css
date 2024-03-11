@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navigation{
+    height: 6rem;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+}
+
+.pageTitle{
+    display: inline-block;
+    font-size: 3rem;
+    color: white;
+    padding: 0rem 0rem 0rem 10rem;
+    line-height: 5rem;
+}
+
+.nav-items{
+    float: right;
+    margin-right: 2.5rem;
+    margin-top: 2rem;
+}
+
+.nav-items li{
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.nav-link{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link.active, .nav-link:hover{
+    color: cadetblue;
+}
+
+.hamburger{
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    line-height: 6rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 924px){
+
+    .hamburger{
+        display: inline-block;
+        float: right;
+    }
+
+    .nav-items{
+        position: fixed;
+        width: 100%;
+        background: #2f3640;
+        margin: 0;
+        text-align: center;
+        margin-top: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .nav-items li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+   
+}
