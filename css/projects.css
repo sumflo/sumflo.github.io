@@ -1,6 +1,12 @@
 .section-projects {
-    background-color: rgb(248, 245, 241);
-    padding: 15rem 5rem;
+/*     background-color: var(--color-grey-light-1); */
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, .8), 
+        rgba(249, 247, 246, .8)),
+        url(/img/ladybug.jpg);
+    background-size: cover;
+    padding: 10rem 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,8 +1,75 @@
 .section-info {
-    
-    padding: 10rem 5rem;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
+}
+
+.section-info-img-container {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: center;
     align-items: center;
+    background: linear-gradient(to right, transparent 50%, rgb(25, 59, 55, .8) 50%);
+}
+
+.section-info-composition-container {
+    height:100%;
+    width: 100%;
+    position: relative;
+}
+
+.section-info-img {
+    height: 30%;
+    box-shadow: 0 1rem 3rem rgb(0, 0, 0, .8);
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+}
+
+.section-info-img:hover .section-info-img:not(:hover) {
+    transform: scale(.95);
+}    
+
+.section-info-img-p1 {
+    right: 20%;
+    top: 15%;
+}
+
+.section-info-img-p1:hover {
+    z-index: 20;
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0, .9);
+}
+
+.section-info-img-p2 {
+    right: 30%;
+    top: 35%;
+}
+
+.section-info-img-p2:hover {
+    z-index: 20;
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0, .9);
+}
+
+
+.section-info-img-p3 {
+    right: 40%;
+    top: 55%;
+}
+
+.section-info-img-p3:hover {
+    z-index: 20;
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0, .9);
+}
+
+.section-info-text-container {
+    display: flex;
+    padding: 0 8rem 0 16rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
 }

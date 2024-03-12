@@ -28,5 +28,5 @@
 .header-img {
     width: 50%;
     border-radius: 50%;
-    box-shadow: 0 1rem 3rem rgb(0, 0, 0, .2);
+    box-shadow: 0 1rem 3rem rgb(0, 0, 0, .5);
 }

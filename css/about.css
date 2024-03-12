@@ -17,12 +17,27 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to left, transparent 50%, rgb(25, 59, 55, .8) 50%);
 }
 
 .section-about-img {
     width: 45%;
-    border-radius: 2rem;
     box-shadow: 0 1rem 3rem rgb(0, 0, 0, .8);
+}
+
+.section-about-img-p1 {
+    left: 0;
+    top: -2rem;
+}
+
+.section-about-img-p2 {
+    right: 0;
+    top: 2rem;
+}
+
+.section-about-img-p3 {
+    left: 20%;
+    top: 10rem;
 }
 
 .section-about-text-container {

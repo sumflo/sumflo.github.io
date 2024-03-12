@@ -1,4 +1,77 @@
 .footer {
     background-color: var(--color-secondary-darker);
     height: 40vh;
+    padding: 5rem 5rem;
+    color: var(--color-grey-light-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.summary {
+    width: 33.33333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact {
+    width: 33.33333%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav {
+    width: 33.33333%;
+    height: fit-content;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-nav::before,
+.footer-nav::after {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: var(--color-primary);
+    position: absolute;
+}
+
+.footer-nav::after {
+    bottom: -5px;
+}
+
+.footer-nav::before {
+    top: -5px;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: var(--color-grey-light-2);
+    font-size: 2rem;
+    transition: all .2;
+}
+
+.footer-nav-link:hover {
+    text-shadow:
+    0 0 .25rem var(--color-grey-light-1),
+    0 0 .5rem var(--color-grey-light-1),
+    0 0 1rem var(--color-grey-light-1),
+    0 0 2rem var(--color-grey-light-1);
 }

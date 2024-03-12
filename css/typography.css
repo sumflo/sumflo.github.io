@@ -18,7 +18,7 @@
     font-size: 2.5rem;
     font-weight: 800;
     text-transform: uppercase;
-    background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary-dark));
+    background-image: linear-gradient(to right, var(--color-secondary-dark), var(--color-secondary-darker));
     -webkit-background-clip: text;
     color:transparent;
 }
@@ -30,9 +30,6 @@
     font-weight: 400;
     color: var(--color-primary-dark);
     text-align: center;
-    background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
-    -webkit-background-clip: text;
-    color:transparent;
     transition: all .5s ease;
 }
 
@@ -49,6 +46,7 @@
     position: relative;
     padding: .5rem;
 }
+
 .heading-4-lines::after,
 .heading-4-lines::before {
     content: '';
@@ -97,4 +95,33 @@
     font-family: var(--font-display);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.footer-text {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.footer-title {
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: var(--color-grey-light-2);
+}
+
+.footer-icon {
+    font-size: 2.5rem;
+    padding-right: 1rem;
+    color: var(--color-grey-light-2)
+}
+
+.jedi {
+    display: inline-block;
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+    -webkit-background-clip: text;
+    color:transparent;
 }
