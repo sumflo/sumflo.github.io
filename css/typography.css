@@ -26,21 +26,24 @@
 .heading-4 {
     width: 100%;
     display: inline-block;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 400;
     color: var(--color-primary-dark);
     text-align: center;
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+    -webkit-background-clip: text;
+    color:transparent;
     transition: all .5s ease;
 }
 
-.heading-4-shadow:hover {
+/* .heading-4-shadow:hover {
     color: var(--color-primary-dark);
     text-shadow:
         0 0 5px var(--color-primary),
         0 0 25px var(--color-primary),
         0 0 50px var(--color-primary),
         0 0 100px var(--color-primary);
-}
+} */
 
 .heading-4-lines {
     position: relative;

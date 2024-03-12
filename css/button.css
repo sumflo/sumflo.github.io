@@ -58,6 +58,7 @@
     transition: all .2s;
     position: relative;
     font-size: 2rem;
+    font-weight: 600;
     border: none;
     cursor: pointer;
 }
