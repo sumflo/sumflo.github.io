@@ -1,5 +1,4 @@
 .section-technologies {
-    background-color: rgb(248, 245, 241);
     padding: 10rem 5rem;
     display: flex;
     flex-direction: column;
@@ -8,7 +7,8 @@
 }
 
 .technology-gallery {
-    background-color: rgb(255, 255, 255, .8);
+    /* background-color: rgb(248, 245, 241); */
+    /* background-color: rgb(255, 255, 255, .8); */
     width: 90%;
     padding: 5rem;;
     display: grid;
