@@ -1,6 +1,6 @@
 .section-values {
     
-/*     background-image: url(/img/rose.jpg); */
+/* background-image: url(/img/rose.jpg); */
 /* background-color: rgba(249, 247, 246, .8); */
     background-image: linear-gradient(
         to right bottom,
@@ -37,4 +37,15 @@
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 2rem;;
+}
+
+@media only screen and (max-width: 1850px) {
+    .values {
+        grid-template-columns: repeat(3, minmax(20rem, 1fr));
+        grid-gap: 8rem;
+    }
+
+    .value {
+        padding: 3rem;
+    }
 }

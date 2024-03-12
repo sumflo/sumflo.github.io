@@ -8,14 +8,15 @@
 
 .heading-2 {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
+    color: var(--color-grey-dark-1);
 }
 
 .heading-3 {
     display: inline-block;
     font-family: var(--font-primary);
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 800;
     text-transform: uppercase;
     background-image: linear-gradient(to right, var(--color-secondary-dark), var(--color-secondary-darker));
@@ -84,8 +85,8 @@
 
 .web-dev {
     display: inline-block;
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 600;
     background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
     -webkit-background-clip: text;
     color:transparent;
@@ -93,8 +94,9 @@
 
 .text {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
+    color: var(--color-grey-dark-1);
 }
 
 .footer-text {
@@ -125,3 +127,5 @@
     -webkit-background-clip: text;
     color:transparent;
 }
+
+@media only screen and (max-width: 1650px) {}

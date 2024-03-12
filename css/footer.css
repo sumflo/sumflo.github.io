@@ -1,7 +1,7 @@
 .footer {
     background-color: var(--color-secondary-darker);
-    height: 40vh;
-    padding: 5rem 5rem;
+
+    padding: 10rem 5rem;
     color: var(--color-grey-light-2);
     display: flex;
     flex-direction: row;
@@ -9,7 +9,7 @@
 }
 
 .summary {
-    width: 33.33333%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .contact {
-    width: 33.33333%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -33,7 +33,7 @@
 }
 
 .footer-nav {
-    width: 33.33333%;
+    width: 30%;
     height: fit-content;
     list-style: none;
     display: flex;
@@ -74,4 +74,17 @@
     0 0 .5rem var(--color-grey-light-1),
     0 0 1rem var(--color-grey-light-1),
     0 0 2rem var(--color-grey-light-1);
+}
+
+@media only screen and (max-width: 1450px) {
+    .summary {
+        width: 54%;
+    }
+    
+    .contact {
+        width: 23%;
+    }
+    .footer-nav {
+        width: 23%;
+    }
 }

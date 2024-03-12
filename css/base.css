@@ -7,11 +7,21 @@
     --color-secondary-darker: rgb(25, 59, 55);
     --color-grey-light-1: rgb(249, 247, 246);
     --color-grey-light-2: rgb(218, 197, 186);
+    --color-grey-dark-1: rgb(77, 64, 50);
 
     /* FONT VARIABLES */
     --font-primary: 'Outfit', sans-serif;
     --font-display: 'Noto Serif', serif;
+
+    /* RESPONSIVE BREAKPOINTS */
+    --bp-huge: 1650px;   /* 1650px */
 }
+
+/* // RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px; */
 
 *,
 *::before,
