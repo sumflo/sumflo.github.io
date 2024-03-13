@@ -55,18 +55,18 @@
 }
 
 .toggle-menu {
-    display: none; /* kezdetben rejtve van */
+    display: none;
 }
 
-@media only screen and (max-width: 412px) {
+/* @media only screen and (max-width: 412px) {
     .navigation-container {
-        display: none; /* navigációs elemek elrejtése */
+        display: none; 
     }
     
     .toggle-menu {
-        display: block; /* gomb megjelenítése */
+        display: block;
     }
-}
+} */
   
 /* MOVING UP HOVER STYLE*/
 /* .navigation-link:hover {
