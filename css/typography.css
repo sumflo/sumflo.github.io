@@ -147,7 +147,16 @@
     color:transparent;
 }
 
-@media only screen and (max-width: 1650px) {}
+@media only screen and (max-width: 1550px) {
+    .heading-3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    .text {
+        font-size: 1.6rem;
+    }
+}
 
 @media only screen and (max-width: 1250px) {
     .heading-1 {
@@ -160,8 +169,13 @@
         font-weight: 400;
         color: var(--color-grey-dark-1);
     }
+
+    .heading-3 {
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
     
     .text {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }

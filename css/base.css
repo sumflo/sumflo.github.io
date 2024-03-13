@@ -34,12 +34,12 @@ body {
     padding: 0 5rem;
 }
 
-.container {
+/* .container {
     display: grid;
     grid-template-rows: 8vh min-content repeat(6, min-content);
-}
+} */
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1250px) {
     body {
         padding: 0
     }

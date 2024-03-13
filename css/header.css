@@ -30,35 +30,8 @@
     box-shadow: 0 1rem 3rem rgb(0, 0, 0, .5);
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 1250px) {
     .header {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        background-image: linear-gradient(
-            to right bottom,
-            rgba(255, 255, 255, 0.8), 
-            rgba(247,191,184, .8)),
-            url(/img/flower.jpg);
-        background-size: auto;
+        justify-content: space-around;
     }
-    
-    .header-intro {
-        width: 100%;
-        padding: 6rem;
-    }
-    
-    .header-img-container {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .header-img {
-        width: 30%;
-        border-radius: 50%;
-        box-shadow: 0 1rem 3rem rgb(0, 0, 0, .5);
-    }
-
 }

@@ -1,9 +1,9 @@
 .navigation {
     height: 10rem;
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 2fr 8fr;
-    padding: 0 3rem 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
 }
 
 .logo {
@@ -15,8 +15,6 @@
     list-style: none;
     display: flex;
     gap: 2rem;
-    align-items: center;
-    justify-content: end;
 }
 
 .navigation-link {
@@ -55,6 +53,20 @@
 .navigation-link:hover::after {
     width: 100%;
 }
+
+.toggle-menu {
+    display: none; /* kezdetben rejtve van */
+}
+
+@media only screen and (max-width: 412px) {
+    .navigation-container {
+        display: none; /* navigációs elemek elrejtése */
+    }
+    
+    .toggle-menu {
+        display: block; /* gomb megjelenítése */
+    }
+}
   
 /* MOVING UP HOVER STYLE*/
 /* .navigation-link:hover {
@@ -67,8 +79,14 @@
     font-weight: 700;
 } */
 
-@media only screen and (max-width: 1350px) {
-    .navigation {
-        grid-template-columns: 3fr 6fr;
+
+
+@media only screen and (max-width: 950px) {
+    .navigation-container {
+        display: none; /* navigációs elemek elrejtése */
+    }
+    
+    .toggle-menu {
+        display: block; /* gomb megjelenítése */
     }
 }

@@ -1,7 +1,14 @@
-.section-info {
+/* .section-info {
     height: 95vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    justify-items: center;
+} */
+
+.section-info {
+    height: 95vh;
+    display: flex;
+    
     justify-items: center;
 }
 
@@ -98,21 +105,25 @@
 }
 
 @media only screen and (max-width: 1250px) {
+    .section-info-img {
+        height: 18%;
+    }
 
     .section-info-img-p1 {
         right: 28%;
-        top: 18%;
+        top: 27%;
         transform: scale(.9);
     }
     
 
     .section-info-img-p2 {
+        top: 41%;
         z-index: 15;
     }
     
     .section-info-img-p3 {
         right: 28%;
-        top: 58%;
+        top: 54%;
         transform: scale(.9);
     }
 }
