@@ -148,3 +148,20 @@
 }
 
 @media only screen and (max-width: 1650px) {}
+
+@media only screen and (max-width: 1250px) {
+    .heading-1 {
+        font-size: 4.5rem;
+    }
+
+    .heading-2 {
+        font-family: var(--font-display);
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: var(--color-grey-dark-1);
+    }
+    
+    .text {
+        font-size: 1.5rem;
+    }
+}

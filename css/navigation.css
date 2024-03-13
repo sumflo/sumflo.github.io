@@ -66,3 +66,9 @@
 /* .navigation-link:active {
     font-weight: 700;
 } */
+
+@media only screen and (max-width: 1350px) {
+    .navigation {
+        grid-template-columns: 3fr 6fr;
+    }
+}

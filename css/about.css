@@ -6,7 +6,7 @@
 } */
 
 .section-about {
-    height: 85vh;
+    height: 95vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-items: center;
