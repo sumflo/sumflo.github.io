@@ -6,7 +6,7 @@
 } */
 
 .section-about {
-    height: 90vh;
+    height: 85vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-items: center;
@@ -21,23 +21,8 @@
 }
 
 .section-about-img {
-    width: 45%;
+    width: 38rem;
     box-shadow: 0 1rem 3rem rgb(0, 0, 0, .8);
-}
-
-.section-about-img-p1 {
-    left: 0;
-    top: -2rem;
-}
-
-.section-about-img-p2 {
-    right: 0;
-    top: 2rem;
-}
-
-.section-about-img-p3 {
-    left: 20%;
-    top: 10rem;
 }
 
 .section-about-text-container {
