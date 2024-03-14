@@ -19,6 +19,8 @@
     position: relative;
 }
 
+/* 3:4 */
+/* w:33 */
 .section-info-img {
     height: 24rem;
     box-shadow: 0 1rem 3rem rgb(0, 0, 0, .8);
@@ -31,7 +33,6 @@
     transform: scale(.95);
 }    
 
-/* 3:4 */
 .section-info-img-p1 {
     right: 20%;
     top: 15%;
@@ -76,9 +77,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
-
     .section-info-text-container {
         padding: 10rem 5rem;
+    }
+
+    /* w:27 */
+    .section-info-img {
+        height: 18rem;
     }
 }
 
@@ -86,6 +91,4 @@
     .section-info-text-container {
         padding: 10rem;
     }
-
-    /* pictures decrease*/
 }
