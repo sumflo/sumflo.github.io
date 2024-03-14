@@ -17,12 +17,15 @@
 
 .values {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     grid-gap: 5rem;
+    place-items: center;
 }
 
 .value {
     background-color: rgb(255, 255, 255, .8);
+    width: 28rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,13 +42,4 @@
     margin-bottom: 2rem;;
 }
 
-@media only screen and (max-width: 1850px) {
-    .values {
-        grid-template-columns: repeat(3, minmax(20rem, 1fr));
-        grid-gap: 8rem;
-    }
-
-    .value {
-        padding: 3rem;
-    }
-}
+@media only screen and (max-width: 1850px) {}
