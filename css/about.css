@@ -27,10 +27,15 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 1024px) {
+    .section-about-text-container {
+        padding: 10rem 5rem;
+    }
+}
+
 @media only screen and (max-width: 999px) {
     .section-about-img {
         width: 25rem;
-        box-shadow: 0 1rem 3rem rgb(0, 0, 0, .8);
     }
 
     .section-about-text-container {
