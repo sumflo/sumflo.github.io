@@ -1,5 +1,4 @@
 .section-projects {
-/*     background-color: var(--color-grey-light-1); */
     background-image: linear-gradient(
         to right bottom,
         rgba(255, 255, 255, .8), 
@@ -75,8 +74,7 @@
     bottom:0;
     right:0;
     z-index: -1;
-/*     transform: rotate(45deg);
-    transform-origin: 100% 100%; */
+    border-radius: 3px;
     transition: all 0.3s ease;
 }
 
@@ -88,24 +86,50 @@
     z-index: 1;
 }
 
-/*  @media only screen and (max-width: 1650px) {
+@media only screen and (max-width: 500px) {
     .project-container {
-        grid-template-columns: repeat(2, minmax(45rem, 1fr));
-        gap: 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .project-card {
-        max-width: 43rem;
+        width: 30rem;
+        height: 52rem;
     }
 
     .project-img {
-        height: 30rem;
+        height: 20rem;
+        width: 30rem;
     }
 
-    .project-img-mobile {
-        width: 55%;
+    .project-description {
+        padding: 0 2.5rem;
     }
-} */
+
+    .project-card:hover .project-img-mobile {
+        transform: translateX(5rem);
+        transform-origin: bottom right;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .project-container {
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    }
+    
+    .project-card {
+        width: 27rem;
+        height: 52rem;
+    }
+
+    .project-img {
+        height: 18rem;
+        width: 27rem;
+    }
+}
 
 /*EXPANDING CARD VERSION*/
 /*.project-img-mobile {
@@ -113,7 +137,6 @@
     transform-origin: 100% 100%; 
 }* /
 
-/*EXPANDING CARD VERSION*/
 /*  .project-container {
     height: 100%;
     display: flex;
@@ -122,16 +145,13 @@
     justify-content: space-between;
 } */
 
-/*EXPANDING CARD VERSION*/
 /* .project-description {
     max-height: 0;
     overflow: hidden;
     transition: all .2s ease;
 } */
 
-/*EXPANDING CARD VERSION*/
 /* .project-card:hover .project-description {
     max-height: 100%;
     overflow: visible;
 } */
-

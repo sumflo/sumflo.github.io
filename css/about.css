@@ -42,3 +42,18 @@
         padding: 10rem;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .section-about {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+    
+    .section-about-img {
+        width: 20rem;
+        margin: 5rem 0;
+    }
+    
+    .section-about-text-container {
+        padding: 5rem;
+    }
+}

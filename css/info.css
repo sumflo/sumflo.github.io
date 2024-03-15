@@ -15,6 +15,7 @@
 .section-info-composition-container {
     height:100%;
     width: 100%;
+    min-height: 72rem;
     padding: 15rem 0;
     position: relative;
 }
@@ -58,7 +59,7 @@
 
 .section-info-img-p3 {
     right: 40%;
-    top: 55%;
+    top: 56%;
 }
 
 .section-info-img-p3:hover {
@@ -76,6 +77,17 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 1350px) {
+    .section-info-text-container {
+        padding: 10rem 5rem;
+    }
+
+        /* w:30 */
+        .section-info-img {
+            height: 20rem;
+        }
+}
+
 @media only screen and (max-width: 1024px) {
     .section-info-text-container {
         padding: 10rem 5rem;
@@ -90,5 +102,92 @@
 @media only screen and (max-width: 999px) {
     .section-info-text-container {
         padding: 10rem;
+    }
+
+    .section-info-composition-container {
+        padding: 10rem 0;
+        min-height: 54rem;
+    }
+
+    .section-info-img-p1 {
+        right: 26%; /* +6 */
+        top: 12%; /* -3 */
+    }
+
+    .section-info-img-p2 {
+        right: 36%;
+        top: 34%;
+    }
+
+    .section-info-img-p3 {
+        right: 46%;
+        top: 55%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .section-info-img-p1 {
+        right: 26%; /* +6 */
+        top: 12%; /* -3 */
+    }
+
+    .section-info-img-p2 {
+        right: 29%;
+        top: 34%;
+    }
+
+    .section-info-img-p3 {
+        right: 31%;
+        top: 55%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section-info {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+    
+    /* 3:4 */
+    /* w:24 */
+    .section-info-img {
+        height: 16rem;
+    }
+    
+    .section-info-text-container {
+        padding: 5rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .section-info-img-p1 {
+        right: 17%;
+        top: 12%;
+    }
+
+    .section-info-img-p2 {
+        right: 20%;
+        top: 34%;
+    }
+
+    .section-info-img-p3 {
+        right: 23%;
+        top: 55%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .section-info-img-p1 {
+        right: 9%; /* +6 */
+        top: 12%; /* -3 */
+    }
+
+    .section-info-img-p2 {
+        right: 12%;
+        top: 34%;
+    }
+
+    .section-info-img-p3 {
+        right: 15%;
+        top: 55%;
     }
 }

@@ -13,7 +13,6 @@
 } */
 
 .header {
-    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     place-items: center;
@@ -54,6 +53,19 @@
         margin: 5rem 0;
         border-radius: 50%;
         box-shadow: 0 1rem 3rem rgb(0, 0, 0, .5);
+    } 
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     }
     
+    .header-intro {
+        width: 26rem;
+    }
+
+    .header-img {
+        width: 20rem;
+    }
 }

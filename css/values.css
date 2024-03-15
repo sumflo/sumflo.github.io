@@ -42,4 +42,11 @@
     margin-bottom: 2rem;;
 }
 
-@media only screen and (max-width: 1850px) {}
+@media only screen and (max-width: 500px) {
+    .values {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

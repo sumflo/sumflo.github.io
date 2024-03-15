@@ -100,3 +100,79 @@
         height: 0;
     }
 }
+
+@media only screen and (max-width: 850px) {
+    .footer {
+        padding: 10rem 5rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summary {
+        width: 100%;
+    }
+
+    .contact {
+        flex-direction: row;
+        margin-top: 5rem;
+        gap: 2.5rem;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+        gap: 2.5rem;
+        align-items: center;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .footer-nav::before,
+    .footer-nav::after {
+        content: "";
+        width: 35rem;
+        height: 1px;
+        background-color: var(--color-primary);
+        position: absolute;
+    }
+
+    .footer-nav::after {
+        bottom: -5px;
+    }
+
+    .footer-nav::before {
+        top: -5px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .contact-card {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-title {
+        padding-bottom: .5rem;
+    }
+
+    .contact {
+        flex-direction: row;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .footer-nav::before,
+    .footer-nav::after {
+        width: 28rem;
+    }
+}
