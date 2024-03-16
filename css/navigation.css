@@ -1,4 +1,4 @@
-.navigation {
+.navbar {
     height: 10rem;
     display: flex;
     align-items: center;
@@ -11,13 +11,13 @@
     align-items: center;
 }
 
-.navigation-container {
+.navbar-items {
     list-style: none;
     display: flex;
     gap: 2rem;
 }
 
-.navigation-link {
+.navbar-link {
     position: relative;
     display: block;
     color: var(--color-secondary);
@@ -26,13 +26,13 @@
     font-weight: 400;
 }
 
-.navigation-link,
-.navigation-link::after,
-.navigation-link::before {
+.navbar-link,
+.navbar-link::after,
+.navbar-link::before {
   transition: all .5s;
 }
 
-.navigation-link::after {
+.navbar-link::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -45,48 +45,60 @@
   height: 1px;
 }
 
-.navigation-link:hover {
+.navbar-link:hover {
     color: var(--color-secondary-dark);
     width: 100%;
 }
 
-.navigation-link:hover::after {
+.navbar-link:hover::after {
     width: 100%;
 }
 
-.toggle-menu {
+.close-menu, .open-menu {
+    color: var(--color-secondary);
+    font-size: 2.5rem;
+    cursor: pointer;
     display: none;
 }
 
-/* @media only screen and (max-width: 412px) {
-    .navigation-container {
-        display: none; 
+.close-menu {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+
+.navbar-check {
+    display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .navbar-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: white;
+        transform: all .3s ease-in-out;
     }
-    
-    .toggle-menu {
+
+    .close-menu, .open-menu {
         display: block;
     }
-} */
-  
+
+    #check:checked ~ .navbar-items {right: 0;}
+}
+
 /* MOVING UP HOVER STYLE*/
-/* .navigation-link:hover {
+/* .navbar-link:hover {
     transform: translateY(-2px);
     font-weight: 700;
 } */
 
-/* MOVING UP HOVER STYLE*/
-/* .navigation-link:active {
+/* .navbar-link:active {
     font-weight: 700;
 } */
-
-
-
-@media only screen and (max-width: 950px) {
-    .navigation-container {
-        display: none; /* navigációs elemek elrejtése */
-    }
-    
-    .toggle-menu {
-        display: block; /* gomb megjelenítése */
-    }
-}
