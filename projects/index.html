@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href='style.css'>
+    <title>CoffeeZones</title>
+</head>
+<body>
+
+    <div class='container'>
+        <header class='header'>
+            <img src='images/CZ_logo.png' alt='CoffeeZones logo' class='logo'>
+            <form action='#' class='search'>
+                <input type='text' class='search-input' placeholder='Search cafes'>
+                <button class='search-button'>
+                    <svg class='search-icon'>
+                        <use xlink:href='images/sprite.svg#icon-magnifying-glass'></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class='user-nav'>
+                <div class='user-nav-icon-box'>
+                    <svg class='user-nav-icon'>
+                        <use xlink:href='images/sprite.svg#icon-bookmark'></use>
+                    </svg>
+                    <span class='user-nav-notification'>7</span>
+                </div>
+                <div class='user-nav-icon-box'>
+                    <svg class='user-nav-icon'>
+                        <use xlink:href='images/sprite.svg#icon-chat'></use>
+                    </svg>
+                    <span class='user-nav-notification'>13</span>
+                </div>
+                <div class='user-nav-user'>
+                    <img src='images/user.jpg' alt='User photo' class='user-nav-user-photo'>
+                    <span class='user-nav-user-name'>Aequitas</span>
+                </div>
+            </nav>
+        </header>
+        <div class='content'>
+            <nav class='sidebar'>
+                <ul class='side-nav'>
+                    <li class='side-nav-item side-nav-item-active'>
+                        <a href='#' class='side-nav-link'>
+                            <svg class='side-nav-icon'>
+                                <use xlink:href='images/sprite.svg#icon-shop'></use>
+                            </svg>
+                            <span>Coffee Shop</span>
+                        </a>
+                    </li>
+                    <li class='side-nav-item'>
+                        <a href='#' class='side-nav-link'>
+                            <svg class='side-nav-icon'>
+                                <use xlink:href='images/sprite.svg#icon-calendar'></use>
+                            </svg>
+                            <span>Events</span>
+                        </a>
+                    </li>
+                    <li class='side-nav-item'>
+                        <a href='#' class='side-nav-link'>
+                            <svg class='side-nav-icon'>
+                                <use xlink:href='images/sprite.svg#icon-new-message'></use>
+                            </svg>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li class='side-nav-item'>
+                        <a href='#' class='side-nav-link'>
+                            <svg class='side-nav-icon'>
+                                <use xlink:href='images/sprite.svg#icon-slideshare'></use>
+                            </svg>
+                            <span>Community</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class='legal'>
+                    &copy; 2024 by CoffeeZones. All rights reserved.
+                </div>
+            </nav>
+            <main class='cofe-view'>
+                 <div class='gallery'>
+                    <figure class='gallery-item'>
+                        <img src='images/coffee_1.jpg' alt='coffee 1' class='gallery-photo'>
+                    </figure>
+                    <figure class='gallery-item'>
+                        <img src='images/coffee_2.jpg' alt='coffee 2' class='gallery-photo'>
+                    </figure>
+                    <figure class='gallery-item'>
+                        <img src='images/coffee_6.jpg' alt='coffee 3' class='gallery-photo'>
+                    </figure>
+                </div>
+                <div class='overview'>
+                    <h1 class='overview-heading'>
+                        Coffee Garden
+                    </h1>
+                    <div class='overview-stars'>
+                        <svg class='overview-icon-star'>
+                            <use xlink:href='images/sprite.svg#icon-star'></use>
+                        </svg>
+                        <svg class='overview-icon-star'>
+                            <use xlink:href='images/sprite.svg#icon-star'></use>
+                        </svg>
+                        <svg class='overview-icon-star'>
+                            <use xlink:href='images/sprite.svg#icon-star'></use>
+                        </svg>
+                        <svg class='overview-icon-star'>
+                            <use xlink:href='images/sprite.svg#icon-star'></use>
+                        </svg>
+                        <svg class='overview-icon-star'>
+                            <use xlink:href='images/sprite.svg#icon-star'></use>
+                        </svg>
+                    </div>
+                    <div class='overview-location'>
+                        <svg class='overview-icon-location'>
+                            <use xlink:href='images/sprite.svg#icon-location-pin'></use>
+                        </svg>
+                        <button class='btn-inline'>Szeged, Hungary</button>
+                    </div>
+                    <div class='overview-rating'>
+                        <div class='overview-rating-average'>8.6</div>
+                        <div class='overview-rating-count'>429 votes</div>
+                    </div>
+                </div>
+                <div class='detail'>
+                    <div class='description'>
+                        <p class='paragraph'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                        </p>
+                        <p class='paragraph'>
+                            Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam. 
+                        </p>
+                        <ul class='list'>
+                            <li class='list-item'>Natural atmosphere</li>
+                            <li class='list-item'>Monthly renewed coffees</li>
+                            <li class='list-item'>Fresh, locally baked cakes</li>
+                            <li class='list-item'>Free Wi-Fi</li>
+                            <li class='list-item'>Air conditioning and heating</li>
+                            <li class='list-item'>Weekly Art Evenings</li>
+                            <li class='list-item'>Friendly and helpful staff</li>
+                            <li class='list-item'>Credit card and cash payment</li>
+                        </ul>
+                        <div class='recommend'>
+                            <p class='recommend-count'>
+                                Lucy and 3 other friends recommend this cafe.
+                            </p>
+                            <div class='recommend-friends'>
+                                <img src='images/users/user_1.jpg' alt='User 1' class='recommend-photo'>
+                                <img src='images/users/user_6.jpg' alt='User 6' class='recommend-photo'>
+                                <img src='images/users/user_3.jpg' alt='User 3' class='recommend-photo'>
+                                <img src='images/users/user_5.jpg' alt='User 5' class='recommend-photo'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='user-reviews'>
+                        <figure class='review'>
+                            <blockquote class='review-text'>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                            </blockquote>
+                            <figcaption class='review-user'>
+                                <img src='images/users/user_4.jpg' alt='User 4' class='review-photo'>
+                                <div class='review-user-box'>
+                                    <p class='review-user-name'>Nick Smith</p>
+                                    <p class='review-user-date'>Feb 13rd, 2023</p>
+                                </div>
+                                <div class='review-rating'>7.8</div>
+                            </figcaption>
+                        </figure>
+                        <figure class='review'>
+                            <blockquote class='review-text'>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi. Lorem ipsum dolor.
+                            </blockquote>
+                            <figcaption class='review-user'>
+                                <img src='images/users/user_2.jpg' alt='User 2' class='review-photo'>
+                                <div class='review-user-box'>
+                                    <p class='review-user-name'>Mary Thomas</p>
+                                    <p class='review-user-date'>Jan 8th, 2024</p>
+                                </div>
+                                <div class='review-rating'>9.3</div>
+                            </figcaption>
+                        </figure>
+
+                        <button class='btn-inline'>Show all <span>&rarr;</span></button>
+                    </div>
+                </div>
+                <div class='cta'>
+                    <h2 class='cta-book-now'>
+                        Good news! 20% discount cake coupon for every coffee this month!
+                    </h2>
+                    <button class='btn'>
+                        <span class='btn-visible'>Visit us</span>
+                        <span class='btn-invisible'>Get your 20% coupon</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+</body>
+</html>
