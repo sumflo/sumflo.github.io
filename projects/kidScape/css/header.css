@@ -1,0 +1,66 @@
+.header {
+    grid-column: full-start / col-end 6;
+    background-image: linear-gradient(rgba(29, 43, 69, .93), rgba(29, 43, 69, .93)), url(../images/kids.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+}
+
+.header-btn {
+    align-self: start;
+    justify-self: start;
+}
+
+.header-seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--color-grey-light-2);
+}
+
+.header-seenon-text::before,
+.header-seenon-text::after{
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+}
+
+.header-seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+    justify-items: center;
+    align-items: center; 
+}
+
+.header-seenon-logos img {
+    max-height: 2.5rem;
+    max-width: 100%;
+    filter: brightness(70%);
+}
+
+.icon-ticket {
+    fill: var(--color-primary);
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .header {grid-column: 1 / -1;}
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .header {padding: 5rem;}
+    
+}
